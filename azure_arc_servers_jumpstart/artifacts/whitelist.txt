@@ -1,0 +1,7 @@
+<INSERT Arc Gateway URL here>
+management.azure.com
+login.microsoftonline.com
+gbl.his.arc.azure.com
+<INSERT your region here>.his.arc.azure.com
+packages.microsoft.com
+download.microsoft.com
