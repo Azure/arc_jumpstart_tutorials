@@ -3,13 +3,13 @@ properties:
 
   resources:
     - resource: HyperVDsc/VMHyperV
-      id: ArcBox-Win2K19
+      id: ArcBox-Win2K25
       directives:
-        description: Configure VM ArcBox-Win2K19
+        description: Configure VM ArcBox-Win2K25
       settings:
-        Name: ArcBox-Win2K19
+        Name: ArcBox-Win2K25
         SwitchName: 'InternalNATSwitch'
-        VhdPath: F:\Virtual Machines\ArcBox-Win2K19.vhdx
+        VhdPath: F:\Virtual Machines\ArcBox-Win2K25.vhdx
         ProcessorCount: 1
         StartupMemory: '8GB'
         RestartIfNeeded: true
@@ -74,6 +74,22 @@ properties:
         Name: ArcBox-Ubuntu-02
         SwitchName: 'InternalNATSwitch'
         VhdPath: F:\Virtual Machines\ArcBox-Ubuntu-02.vhdx
+        ProcessorCount: 1
+        StartupMemory: '2GB'
+        RestartIfNeeded: true
+        State: Off
+        Generation: 2
+        Path: F:\Virtual Machines
+        EnableGuestService: true
+        SecureBoot: false
+    - resource: HyperVDsc/VMHyperV
+      id: ArcBox-Proxy
+      directives:
+        description: Configure VM ArcBox-Proxy
+      settings:
+        Name: ArcBox-Proxy
+        SwitchName: 'InternalNATSwitch'
+        VhdPath: F:\Virtual Machines\ArcBox-Proxy.vhdx
         ProcessorCount: 1
         StartupMemory: '2GB'
         RestartIfNeeded: true
